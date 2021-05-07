@@ -72,10 +72,10 @@ public class InvestmentServlet {
 				 } 
 				 
 				 // Prepare the html table to be displayed
-				 output = "<table border='1'><tr><th>project Name</th>"
-				 + "<th>researcherName</th>" +
-				 "<th>investorName</th>" + 
-				 "<th>investAmount</th>" + 
+				 output = "<table border='1'><tr><th>Project Name</th>"
+				 + "<th>Researcher Name</th>" +
+				 "<th>Investor Name</th>" + 
+				 "<th>Invest Amount</th>" + 
 				 "<th>Card No</th>" +
 				 "<th>CVV No</th>" +
 				 "<th>Update</th><th>Remove</th></tr>"; 

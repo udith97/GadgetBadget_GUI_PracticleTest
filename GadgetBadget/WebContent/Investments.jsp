@@ -21,7 +21,7 @@
 	
 			<p class="font-weight-bold">
 				<center>
-					<h1><u><i><b>Investment Management - GadgetBadget</b></i></u></h1>
+					<h1><b>Investment Management - GadgetBadget</b></h1>
 				</center>
 			</p>
 			<br><br>
@@ -32,23 +32,23 @@
 					<form id="INVESTMENT" name="INVESTMENT" class="border border-light p-5">
 						
 						<div class="form-outline mb-4">
-						    <label class="form-label" for="form6Example3" class="col-sm-2 col-form-label col-form-label-sm">projectName:</label>
-						    <input type="text" id="projectName" class="form-control" name="projectName">						    
+						    <label class="form-label" for="form6Example3" class="col-sm-2 col-form-label col-form-label-sm">Project Name:</label>
+						    <input type="text" id="projectName" class="form-control" name="projectName" placeholder="Enter Project Name..">						    
 						</div>
 						
 						<div class="form-outline mb-4">
-						    <label class="form-label" for="form6Example3" class="col-sm-2 col-form-label col-form-label-sm">researcherName:</label>
-						    <input type="text" id="researcherName" class="form-control" name="researcherName">						    
+						    <label class="form-label" for="form6Example3" class="col-sm-2 col-form-label col-form-label-sm">Researcher Name:</label>
+						    <input type="text" id="researcherName" class="form-control" name="researcherName" placeholder="Enter Researcher Name..">						    
 						</div>
 						
 						<div class="form-outline mb-4">
-						    <label class="form-label" for="form6Example3" class="col-sm-2 col-form-label col-form-label-sm">investorName:</label>
-						    <input type="text" id="investorName" class="form-control" name="investorName">						    
+						    <label class="form-label" for="form6Example3" class="col-sm-2 col-form-label col-form-label-sm">Investor Name:</label>
+						    <input type="text" id="investorName" class="form-control" name="investorName" placeholder="Enter Investor name..">						    
 						</div>
 						
 						<div class="form-outline mb-4">
-						    <label class="form-label" for="form6Example3" class="col-sm-2 col-form-label col-form-label-sm">investAmount:</label>
-						    <input type="text" id="investAmount" class="form-control" name="investAmount">						    
+						    <label class="form-label" for="form6Example3" class="col-sm-2 col-form-label col-form-label-sm">Invest Amount:</label>
+						    <input type="text" id="investAmount" class="form-control" name="investAmount" placeholder="Rs.">						    
 						</div>
 					
 						 
@@ -56,16 +56,13 @@
 						    <div class="col">
 						      <div class="form-outline">
 						        <label class="form-label" for="form6Example1" class="col-sm-2 col-form-label col-form-label-sm">Credit/Debit Card No:</label>
-						        <input type="text" id="cardNo" class="form-control" name="cardNo">						        
+						        <input type="text" id="cardNo" class="form-control" name="cardNo" placeholder="xxxx-xxxx-xxxx.">						        
 						      </div>
 						    </div>
 						    <div class="col">
 						      <div class="form-outline">
 								<label class="form-label" for="form6Example2" class="col-sm-2 col-form-label col-form-label-sm">CVV No:</label>
-						        <input type="text" id="cvvNo" class="form-control" name="cvvNo" aria-describedby="passwordHelpInline">
-						        <small id="passwordHelpInline" class="text-muted">
-      								Must be 3 digit number.
-    							</small>
+						        <input type="text" id="cvvNo" class="form-control" name="cvvNo" aria-describedby="passwordHelpInline" placeholder="xxx">
 						      </div>
 						    </div>
 						  </div>						
