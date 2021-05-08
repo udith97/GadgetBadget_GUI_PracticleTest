@@ -54,7 +54,7 @@ public class InvestmentService {
 	@Path("/") 
 	@Consumes(MediaType.APPLICATION_JSON) 
 	@Produces(MediaType.TEXT_PLAIN) 
-	public String updateInvestmentr(String investmentData) 
+	public String updateInvestment(String investmentData) 
 	{ 
 		//Convert the input string to a JSON object 
 		 JsonObject investmentObject = new JsonParser().parse(investmentData).getAsJsonObject(); 
