@@ -8,7 +8,7 @@
 		<meta charset="UTF-8">
 			<title>Investment Management - GadgetBadget</title>
 	
-		<link href="myStyle.css" rel="stylesheet" />
+		<link href="css/stylsheet.css" rel="stylesheet" />
 		<link rel="stylesheet" href="Views/bootstrap.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 		<script src="Components/jquery-3.5.0.min.js"></script>
@@ -27,8 +27,6 @@
 			<br><br>
 			
 			<fieldset>
-	
-				<legend><b>Add Investment Details</b></legend>
 					<form id="INVESTMENT" name="INVESTMENT" class="border border-light p-5">
 						
 						<div class="form-outline mb-4">
@@ -70,6 +68,9 @@
 						
 						<input id="btnSave" name="btnSave" type="button" value="Save" class="btn btn-primary btn-lg btn-block"> 
 						<input type="hidden" id="hidInvestmentIDSave" name="hidInvestmentIDSave" value="">
+						<br>
+						<br>
+						<input type="reset"  id="btnClear" name="btnClear" class="btn btn-primary btn-lg btn-block">
 					</form>
 				
 					<div id="alertSuccess" class="alert alert-success"></div>
