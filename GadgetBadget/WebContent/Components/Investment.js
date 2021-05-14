@@ -24,7 +24,7 @@ $(document).on("click", "#btnSave", function(event) {
 	}
 	
 	// If valid------------------------
-	var type = ($("#hidInvestmentIDSave").val() == "") ? "POST" : "PUT";
+	var type = ($("#investmentID").val() == "") ? "POST" : "PUT";
 
 	$.ajax({
 		url : "InvestmentAPI",
@@ -67,7 +67,7 @@ function onItemSaveComplete(response, status) {
 		$("#alertError").show();
 	}
 	
-	$("#hidInvestmentIDSave").val("");
+	$("#investmentID").val("");
 	$("#INVESTMENT")[0].reset();
 }
 
@@ -76,10 +76,11 @@ $(document).on("click", ".btnRemove", function(event) {
 	$.ajax({
 		url : "InvestmentAPI",
 		type : "DELETE",
-		data : "investmentID=" + $(this).data("investmentID"),
+		data : "investmentID=" + event.target.value,
 		dataType : "text",
 		complete : function(response, status) {
 			onItemDeleteComplete(response.responseText, status);
+			window.location.reload(true);
 		}
 	});
 });
@@ -117,13 +118,14 @@ function onItemDeleteComplete(response, status) {
 // UPDATE==========================================
 $(document).on("click",".btnUpdate",function(event)
 		{
-			$("#hidInvestmentIDSave").val($(this).data("investmentID"));
-			$("#projectName").val($(this).closest("tr").find('td:eq(0)').text());
-			$("#researcherName").val($(this).closest("tr").find('td:eq(1)').text());
-			$("#investorName").val($(this).closest("tr").find('td:eq(2)').text());
-			$("#investAmount").val($(this).closest("tr").find('td:eq(3)').text());
-			$("#cardNo").val($(this).closest("tr").find('td:eq(4)').text());
-			$("#cvvNo").val($(this).closest("tr").find('td:eq(5)').text());		
+			
+			$("#investmentID").val($(this).closest("tr").find('td:eq(0)').text());
+			$("#projectName").val($(this).closest("tr").find('td:eq(1)').text());
+			$("#researcherName").val($(this).closest("tr").find('td:eq(2)').text());
+			$("#investorName").val($(this).closest("tr").find('td:eq(3)').text());
+			$("#investAmount").val($(this).closest("tr").find('td:eq(4)').text());
+			$("#cardNo").val($(this).closest("tr").find('td:eq(5)').text());
+			$("#cvvNo").val($(this).closest("tr").find('td:eq(6)').text());		
 		});
 
 

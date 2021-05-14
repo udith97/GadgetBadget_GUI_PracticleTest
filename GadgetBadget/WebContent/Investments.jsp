@@ -31,6 +31,7 @@
 						
 						<div class="form-outline mb-4">
 						    <label class="form-label" for="form6Example3" class="col-sm-2 col-form-label col-form-label-sm">Project Name:</label>
+						    <input type="hidden" id="investmentID" name="investmentID" value="">
 						    <input type="text" id="projectName" class="form-control" name="projectName" placeholder="Enter Project Name..">						    
 						</div>
 						
@@ -66,15 +67,16 @@
 						  </div>						
 						<br> 
 						
+						<div id="alertSuccess" class="alert alert-success"></div>
+						<div id="alertError" class="alert alert-danger"></div>
 						<input id="btnSave" name="btnSave" type="button" value="Save" class="btn btn-primary btn-lg btn-block"> 
-						<input type="hidden" id="hidInvestmentIDSave" name="hidInvestmentIDSave" value="">
+						
 						<br>
-						<br>
+							
 						<input type="reset"  id="btnClear" name="btnClear" class="btn btn-primary btn-lg btn-block">
 					</form>
 				
-					<div id="alertSuccess" class="alert alert-success"></div>
-					<div id="alertError" class="alert alert-danger"></div>			
+							
 			</fieldset>
 			
 			<br> 
@@ -94,6 +96,3 @@
 		</div>
 	</body>
 </html>
-
-
-

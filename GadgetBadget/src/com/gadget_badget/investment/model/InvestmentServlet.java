@@ -53,7 +53,9 @@ public class InvestmentServlet {
 			 catch (Exception e) 
 			 { 
 				 output = "{\"status\":\"error\", \"data\": \"Error while inserting the investment.\"}";
-				 System.err.println(e.getMessage());
+				 System.out.println(e.getMessage());
+					System.out.println(e);
+					e.printStackTrace();
 			 } 
 		 	return output; 
 		 } 
@@ -72,8 +74,9 @@ public class InvestmentServlet {
 				 } 
 				 
 				 // Prepare the html table to be displayed
-				 output = "<table border='1'><tr><th>Project Name</th>"
-				 + "<th>Researcher Name</th>" +
+				 output = "<table border='1'><tr><th>investmentID</th>"
+						 + "<th>Project Name</th>" +	 
+				  "<th>Researcher Name</th>" +
 				 "<th>Investor Name</th>" + 
 				 "<th>Invest Amount</th>" + 
 				 "<th>Card No</th>" +
@@ -98,7 +101,8 @@ public class InvestmentServlet {
 					 
 					 
 					 // Add into the html table
-					 output += "<tr><td>" + projectName + "</td>"; 
+					 output += "<tr><td>" + investmentID + "</td>";
+					 output += "<td>" + projectName + "</td>";
 					 output += "<td>" + researcherName + "</td>"; 
 					 output += "<td>" + investorName + "</td>"; 
 					 output += "<td>" + investAmount + "</td>"; 
@@ -108,8 +112,7 @@ public class InvestmentServlet {
 					 
 					 // buttons
 					 output += "<td><input name='btnUpdate' type='button' value='Update' class='btnUpdate btn btn-secondary'></td>"
-					 + "<td><input name='btnRemove' type='button' value='Remove' class='btnRemove btn btn-danger' data-itemid='" 
-					 + investmentID + "'>" + "</td></tr>";
+							 + "<td><button class='btnRemove btn btn-danger' name='btnRemove' id ='btnRemove' value='"+ investmentID +"' >Remove</button></td></tr>";
 				 } 
 				 	 con.close(); 
 				 	 // Complete the html table
@@ -118,7 +121,9 @@ public class InvestmentServlet {
 			 catch (Exception e) 
 			 { 
 				 output = "Error while reading the investment"; 
-				 System.err.println(e.getMessage()); 
+				 System.out.println(e.getMessage());
+					System.out.println(e);
+					e.printStackTrace(); 
 			 } 
 		 	 return output; 
 		 } 
@@ -156,7 +161,9 @@ public class InvestmentServlet {
 			 catch (Exception e) 
 			 { 
 				 output = "{\"status\":\"error\", \"data\": \"Error while updating the investment.\"}"; 
-				 System.err.println(e.getMessage()); 
+				 System.out.println(e.getMessage());
+					System.out.println(e);
+					e.printStackTrace(); 
 			 } 
 			 	return output; 
 			 } 
@@ -188,7 +195,9 @@ public class InvestmentServlet {
 			 catch (Exception e) 
 			 { 
 				 output = "{\"status\":\"error\", \"data\": \"Error while deleting the investment.\"}"; 
-				 System.err.println(e.getMessage()); 
+				 System.out.println(e.getMessage());
+					System.out.println(e);
+					e.printStackTrace();
 			 } 
 			 return output; 
 		} 
